@@ -25,6 +25,7 @@
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![Aiogram](https://img.shields.io/badge/Aiogram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)
 
 </div>
 
@@ -33,7 +34,6 @@
 ## 📱 My Projects
 
 - [📌 My Apps on Google Play](https://play.google.com/store/search?q=pub%3AH%26A%20SOLUTIONS&c=apps)  
-- [📌 Jetpack Compose Lessons](https://github.com/Developer-Mustafo/Compose-lesson)  
 
 ---
 
@@ -52,8 +52,8 @@
 
 ## 🌐 Connect with Me
 
-[![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/yourusername)  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourusername)  
+[![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/mustafo_rahim_2009)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mustafo-rahim-4a0384324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)  
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mustaforahimov30@gmail.com)
 
 ---

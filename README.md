@@ -1,15 +1,15 @@
-# 👋 Salom, men Mustafo
+# 👋 Hi, I'm Mustafo
 
-### 💻 Android va Backend Dasturchisi
+### 💻 Android & Backend Developer
 
-- 🔭 Hozirda **Android (Jetpack Compose)** va **Backend (Spring Boot, PostgreSQL)** bilan ishlayman.  
-- 🌱 Hozirda **AI va Machine Learning**ni o‘rganmoqdaman.  
-- 👯 Loyihalarda hamkorlik qilishga tayyorman.  
-- 📫 Menga yozish uchun: **developer.mustafa@gmail.com**  
+- 🔭 Currently working with **Android (Jetpack Compose)** and **Backend (Spring Boot, PostgreSQL)**  
+- 🌱 Currently learning **AI & Machine Learning**  
+- 👯 Open to collaborating on interesting projects  
+- 📫 Reach me at: **mustaforahimov30@gmail.com**  
 
 ---
 
-## 🚀 Texnologiyalar va Asboblar
+## 🚀 Technologies & Tools
 
 <div align="center">
 
@@ -30,27 +30,32 @@
 
 ---
 
-## 📱 Loyihalarim
+## 📱 My Projects
 
-- [📌 Google Play-dagi ilovalarim](https://play.google.com/store/search?q=pub%3AH%26A%20SOLUTIONS&c=apps)  
-- [📌 Jetpack Compose darslari](https://github.com/Developer-Mustafo/Compose-lesson)  
+- [📌 My Apps on Google Play](https://play.google.com/store/search?q=pub%3AH%26A%20SOLUTIONS&c=apps)  
+- [📌 Jetpack Compose Lessons](https://github.com/Developer-Mustafo/Compose-lesson)  
 
 ---
 
-## 📊 Statistikalar
+## 📊 GitHub Stats
 
 <div align="center">
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Developer-Mustafo&show_icons=true&theme=tokyonight)  
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Developer-Mustafo&layout=compact&theme=tokyonight)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Developer-Mustafo&layout=compact&theme=tokyonight)  
+![Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=Developer-Mustafo&theme=tokyonight)  
+![Profile Views](https://komarev.com/ghpvc/?username=Developer-Mustafo&style=for-the-badge)  
 
 </div>
 
 ---
 
-## 🌐 Menga ulanishingiz mumkin
+## 🌐 Connect with Me
+
 [![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/yourusername)  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourusername)  
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mustaforahimov30@gmail.com)
 
 ---
-✨ Dasturlashni sevadigan Mustafo ✨
+
+✨ Passionate about coding — Mustafo ✨

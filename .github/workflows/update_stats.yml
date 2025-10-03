@@ -1,20 +1,15 @@
-name: Update Stats
+name: Update README
 
 on:
   schedule:
-    - cron: "0 19 * * *"   # Har kuni 00:00 Toshkent vaqti (19:00 UTC)
-  workflow_dispatch:       # Qo'lda ham ishga tushirish mumkin
-  push:
-    branches:
-      - main
+    - cron: "0 19 * * *"  # 00:00 Toshkent vaqti
+  workflow_dispatch:
 
 jobs:
-  build:
+  update-readme:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -22,11 +17,9 @@ jobs:
           python-version: "3.x"
 
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+        run: pip install PyGithub
 
-      - name: Run script
+      - name: Update README
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python main.py
+        run: python scripts/update_readme.py

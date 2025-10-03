@@ -1,53 +1,39 @@
-from github import Github
 import os
-import re
+import requests
 
-# GitHub token (Secrets orqali oling)
-g = Github(os.environ["GITHUB_TOKEN"])
-user = g.get_user()
-repos = user.get_repos()  # Public va private farqi yo'q
+GITHUB_USERNAME = "Developer-Mustafo"
+README_PATH = "README.md"
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 
-# Icon mapping (dynamic, mashhur tillar uchun)
-lang_icons = {
-    "Python": "🐍",
-    "Java": "☕",
-    "Kotlin": "🤖",
-    "Rust": "🦀",
-    "C++": "💻",
-    "JavaScript": "📜",
-    "Go": "🐹",
-    "TypeScript": "🔷",
-}
+# Get all repos (public + private)
+headers = {"Authorization": f"token {GITHUB_TOKEN}"}
+repos_url = f"https://api.github.com/users/{GITHUB_USERNAME}/repos?per_page=100&type=owner"
+repos = requests.get(repos_url, headers=headers).json()
 
-# Tillarni hisoblash
 lang_count = {}
-total = 0
 for repo in repos:
-    lang = repo.language
+    lang = repo["language"]
     if lang:
         lang_count[lang] = lang_count.get(lang, 0) + 1
-        total += 1
 
-def progress_bar(percentage):
-    bars = int(percentage // 5)  # 20 barli progress
-    return "█" * bars + "░" * (20 - bars)
+# Calculate percentage
+total = sum(lang_count.values())
+lang_percent = {lang: int(count/total*100) for lang, count in lang_count.items()}
 
-# README Languages section
-readme_lang_section = "### 📊 Languages Usage\n\n"
-for lang, count in lang_count.items():
-    percent = round((count / total) * 100)
-    icon = lang_icons.get(lang, "📌")
-    readme_lang_section += f"- {icon} {lang:<10} {progress_bar(percent)} {percent}%\n"
+# Build markdown
+lang_md = "\n".join([f"- {lang}: {percent}%" for lang, percent in lang_percent.items()])
 
-# README.md faylini yangilash
-with open("README.md", "r", encoding="utf-8") as f:
-    content = f.read()
+# Update README
+with open(README_PATH, "r", encoding="utf-8") as f:
+    readme = f.read()
 
-pattern = r"### 📊 Languages Usage\n.*?\n\n"
-if re.search(pattern, content, flags=re.DOTALL):
-    content = re.sub(pattern, readme_lang_section + "\n", content, flags=re.DOTALL)
-else:
-    content += "\n" + readme_lang_section + "\n"
+if "<!-- LANGUAGES USAGE WILL BE UPDATED AUTOMATICALLY -->" in readme:
+    new_readme = readme.replace(
+        "<!-- LANGUAGES USAGE WILL BE UPDATED AUTOMATICALLY -->",
+        lang_md
+    )
 
-with open("README.md", "w", encoding="utf-8") as f:
-    f.write(content)
+with open(README_PATH, "w", encoding="utf-8") as f:
+    f.write(new_readme)
+
+print("README.md updated successfully.")

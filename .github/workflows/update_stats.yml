@@ -1,8 +1,8 @@
-name: Update README
+name: Update README Languages
 
 on:
   schedule:
-    - cron: "0 19 * * *"  # 00:00 Toshkent vaqti
+    - cron: '0 0 * * *' # every day at 00:00 UTC
   workflow_dispatch:
 
 jobs:
@@ -10,16 +10,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.x"
-
+          python-version: 3.x
       - name: Install dependencies
-        run: pip install PyGithub
-
+        run: pip install requests
       - name: Update README
+        run: python update_readme.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/update_readme.py
+      - name: Commit & Push changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add README.md
+          git commit -m "Update Languages Usage [skip ci]" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

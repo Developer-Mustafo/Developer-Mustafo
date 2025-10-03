@@ -2,8 +2,8 @@ name: Update README Languages
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # har 5 daqiqa (UTC)
-  workflow_dispatch:        # qo'lda ishga tushirish uchun
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
 
 jobs:
   update-readme:

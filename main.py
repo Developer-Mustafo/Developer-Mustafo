@@ -38,6 +38,10 @@ def create_language_chart(languages, username):
     if not languages:
         print("No language data found")
         return
+    
+    # PAPKA YARATISH - BU YERNI QO'SHING
+    os.makedirs('scripts', exist_ok=True)
+    
     labels, sizes = [], []
     colors = plt.cm.Set3.colors
     for lang, bytes_count in sorted(languages.items(), key=lambda x: x[1], reverse=True):
@@ -55,10 +59,11 @@ def create_language_chart(languages, username):
     plt.legend(wedges, [f'{label}: {size:,} KB' for label, size in zip(labels, sizes)],
                title="Languages", loc="center left", bbox_to_anchor=(1, 0, 0.5, 1))
     plt.tight_layout()
-    save_paths = ['languages.png', 'scripts/languages.png']
-    for path in save_paths:
-        plt.savefig(path, dpi=300, bbox_inches='tight', facecolor='white')
-    print(f"Chart generated for {len(languages)} languages")
+    
+    # Endi faqat scripts/ papkasiga saqlaymiz
+    path = 'scripts/languages.png'
+    plt.savefig(path, dpi=300, bbox_inches='tight', facecolor='white')
+    print(f"📈 Chart saved to {path}")
     plt.close()
 
 def generate_stats_summary(repos, languages):
@@ -79,6 +84,10 @@ def generate_stats_summary(repos, languages):
 
 if __name__ == "__main__":
     print("🚀 Starting GitHub language analysis...")
+    
+    # PAPKA YARATISH - BU YERNI HAM QO'SHING
+    os.makedirs('scripts', exist_ok=True)
+    
     repos = get_repos(USERNAME)
     print(f"📁 Found {len(repos)} repositories")
     if repos:
@@ -87,7 +96,10 @@ if __name__ == "__main__":
         create_language_chart(languages, USERNAME)
         summary = generate_stats_summary(repos, languages)
         print(summary)
+        
+        # Markdown faylini saqlash
         with open('scripts/language_stats.md', 'w') as f:
             f.write(summary)
+        print("✅ Stats saved to scripts/language_stats.md")
     else:
         print("❌ No repositories found or error fetching data")

@@ -7,6 +7,11 @@
 
 ---
 
+### 🟢 Workflow Status
+[![Update README Languages](https://github.com/Developer-Mustafo/Developer-Mustafo/actions/workflows/update_readme.yml/badge.svg?branch=main)](https://github.com/Developer-Mustafo/Developer-Mustafo/actions/workflows/update_readme.yml)
+
+---
+
 ### 📊 Languages Usage
 <!-- LANGUAGES USAGE WILL BE UPDATED AUTOMATICALLY -->
 

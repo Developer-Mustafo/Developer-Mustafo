@@ -1,0 +1,33 @@
+name: Generate GitHub Language Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * 0"   # har hafta yakshanba kuni avtomatik ishlaydi
+  workflow_dispatch:       # qo'lda ham ishga tushirish mumkin
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run script
+        run: python stats.py
+
+      - name: Commit and Push results
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add languages.png
+          git commit -m "Update language stats"
+          git push

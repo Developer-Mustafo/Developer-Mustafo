@@ -2,25 +2,28 @@ name: Update README Languages
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # UTC soat 00:00
-    - cron: '0 12 * * *' # UTC soat 12:00 (12 soatdan keyin)
-  workflow_dispatch:      # qo'lda ishga tushirish uchun
+    - cron: '*/5 * * * *'  # har 5 daqiqa (UTC)
+  workflow_dispatch:        # qo'lda ishga tushirish uchun
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: 3.x
+
       - name: Install dependencies
         run: pip install requests
+
       - name: Update README
         run: python update_readme.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Commit & Push changes
         run: |
           git config user.name "github-actions"

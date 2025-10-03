@@ -20,7 +20,25 @@
 
 ---
 
+### 📈 Activity Graph
+![Mustafo's GitHub activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Developer-Mustafo&theme=radical)  
+
+---
+
+### 🛠 Skills & Tools
+- **Languages:** Java, Kotlin, Python, C++  
+- **Backend:** Spring Boot, Ktor, REST APIs  
+- **Databases:** PostgreSQL, Room, SQLite  
+- **Frontend:** Jetpack Compose, Compose Desktop  
+- **Other:** GitHub Actions, Docker, Retrofit  
+
+---
+
 ### 🌐 Connect With Me
 - 📧 Email: [mustaforahimov30@gmail.com](mailto:mustaforahimov30@gmail.com)  
 - 💬 Telegram: [@mustafo_rahim_2009](https://t.me/mustafo_rahim_2009)  
 - 💼 LinkedIn: [Mustafo Rahim](https://www.linkedin.com/in/mustafo-rahim-4a0384324)  
+
+---
+
+⭐️ From [Developer-Mustafo](https://github.com/Developer-Mustafo)

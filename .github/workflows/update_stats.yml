@@ -2,7 +2,7 @@ name: Update Stats
 
 on:
   schedule:
-    - cron: "0 0 * * *"   # Har kuni soat 00:00 da ishlaydi (UTC vaqti)
+    - cron: "0 19 * * *"   # Har kuni 00:00 Toshkent vaqti (19:00 UTC)
   workflow_dispatch:       # Qo'lda ham ishga tushirish mumkin
   push:
     branches:

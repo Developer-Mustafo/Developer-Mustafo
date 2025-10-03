@@ -2,32 +2,50 @@ name: Generate GitHub Language Stats
 
 on:
   schedule:
-    - cron: "0 0 * * 0"   # har hafta yakshanba kuni avtomatik ishlaydi
-  workflow_dispatch:       # qo'lda ham ishga tushirish mumkin
+    - cron: "0 0 * * 0"   # Runs every Sunday at 00:00 UTC
+  workflow_dispatch:       # Manual trigger enabled
+  push:
+    paths:
+      - 'scripts/stats.py'  # Run when the script changes
+      - 'requirements.txt'  # Run when dependencies change
 
 jobs:
-  build:
+  generate-stats:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
+    
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
-
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.10"
-
+          cache: 'pip'
+          
       - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Run script
-        run: python stats.py
-
-      - name: Commit and Push results
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install requests matplotlib
+          
+      - name: Create scripts directory if not exists
+        run: mkdir -p scripts
+          
+      - name: Run statistics script
+        run: python scripts/stats.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Commit and push generated files
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
           git add languages.png
-          git commit -m "Update language stats"
+          git add scripts/languages.png
+          git diff --staged --quiet || git commit -m "📊 Auto-update language statistics [skip ci]"
           git push

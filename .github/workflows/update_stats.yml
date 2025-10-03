@@ -4,7 +4,7 @@ on:
   schedule:
       - cron: '0 0 * * *'  # UTC soat 00:00
       - cron: '0 12 * * *' # UTC soat 12:00 (12 soatdan keyin)
-  workflow_dispatch:      # qo'lda ishga tushirish uchun
+  workflow_dispatch:     # qo'lda ishga tushirish uchun
 
 jobs:
   update-readme:

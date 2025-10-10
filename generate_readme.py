@@ -3,40 +3,64 @@ import requests
 from datetime import datetime
 
 API_KEY = os.getenv("WAKATIME_API_KEY")
-USER_AGENT = "github-readme-updater"
+URL = "https://wakatime.com/api/v1/users/current/stats/last_7_days"
+HEADERS = {
+    "User-Agent": "GitHubAction-WakaTimeUpdater",
+    "Authorization": f"Bearer {API_KEY}"
+}
+
 
 def get_wakatime_stats():
-    url = "https://wakatime.com/api/v1/users/current/stats/last_7_days"
-    headers = {"User-Agent": USER_AGENT, "Authorization": f"Bearer {API_KEY}"}
-    res = requests.get(url, headers=headers)
-    res.raise_for_status()
-    return res.json()["data"]
+    try:
+        res = requests.get(URL, headers=HEADERS)
+        print("🔍 Status Code:", res.status_code)
+        if not res.ok:
+            print("❌ Response Body:", res.text)
+            raise SystemExit(f"WakaTime API error: {res.status_code}")
+        data = res.json()
+        return data.get("data", {})
+    except Exception as e:
+        raise SystemExit(f"❗ Error fetching WakaTime stats: {e}")
+
 
 def generate_readme(stats):
-    total_time = stats["human_readable_total"]
-    lang_stats = stats["languages"][:5]
+    total_time = stats.get("human_readable_total", "0 mins")
+    lang_stats = stats.get("languages", [])[:5]
 
-    langs = "\n".join([
-        f"- **{l['name']}**: {l['text']} ({l['percent']:.2f}%)"
-        for l in lang_stats
-    ])
+    if not lang_stats:
+        langs_text = "_No data available yet._"
+    else:
+        langs_text = "\n".join([
+            f"- **{lang['name']}**: {lang['text']} ({lang['percent']:.2f}%)"
+            for lang in lang_stats
+        ])
+
+    updated_time = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
 
     readme = f"""# 📊 Weekly Coding Stats
 
-This README is automatically updated every 24 hours using **GitHub Actions** and **WakaTime API**.
+This README is automatically updated using **WakaTime API** and **GitHub Actions**.
 
 ## 🕒 Last 7 Days
 - Total Coding Time: **{total_time}**
 
-### 💻 Languages
-{langs}
+### 💻 Top Languages
+{langs_text}
 
-> Auto-updated on {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}
+> Auto-updated on **{updated_time}**
 """
     return readme
 
-if __name__ == "__main__":
-    stats = get_wakatime_stats()
-    readme = generate_readme(stats)
+
+def save_readme(content: str):
     with open("README.md", "w", encoding="utf-8") as f:
-        f.write(readme)
+        f.write(content)
+    print("✅ README.md updated successfully!")
+
+
+if __name__ == "__main__":
+    if not API_KEY:
+        raise SystemExit("🚫 WAKATIME_API_KEY environment variable is missing!")
+    stats = get_wakatime_stats()
+    readme_content = generate_readme(stats)
+    save_readme(readme_content)

@@ -1,28 +1,33 @@
-# 👋 Hello, I'm Mustafo Rahimov
+# WakaTime profile summary — @mustaforahim2009
 
-### 🚀 About Me
-- 💻 Android & Backend Developer  
-- 🛠 Mainly working with **Java**, **Kotlin**, **Spring Boot**, and **Jetpack Compose**  
-- 🎯 Goal: Build outstanding projects and showcase them to the world  
+⚠️ Diqqat: Bu fayl brauzer yoki internet orqali sahifani to'g'ridan-to'g'ri yuklab olishga uringan holda avtomatik yaratilmadi.
+Sizga keyingi bosqichlarni bajarish uchun zarur bo‘lgan fayllar `generate_readme.py` bilan birga berilmoqda.
 
----
+## Nima bor
+- `generate_readme.py` — WakaTime profilidan README.md yaratish uchun Python skripti.
+- `WAKATIME_PROFILE.info` — profil URL haqida kichik metadata.
+- `README.md` — hozirgi placeholder/fayl (bu faylni avtomatik to'ldirish uchun pastdagi ko'rsatmalarga qarang).
 
-### 🟢 Workflow Status
-[![Update README Languages](https://github.com/Developer-Mustafo/Developer-Mustafo/actions/workflows/update_readme.yml/badge.svg?branch=main)](https://github.com/Developer-Mustafo/Developer-Mustafo/actions/workflows/update_readme.yml)
+## Qanday ishlatish
+1. Terminalda Python3 o'rnatilganiga ishonch hosil qiling.
+2. Zarur kutubxonalarni o'rnating:
+   ```bash
+   pip3 install requests beautifulsoup4
+   ```
+3. Skriptni ishga tushiring:
+   ```bash
+   python3 generate_readme.py
+   ```
+   Skript `README.md` faylini yaratadi va `wakatime_readme.tar` arxivini hosil qiladi.
+4. Arxivni chiqarish:
+   ```bash
+   tar -xvf wakatime_readme.tar
+   ```
+   Ichida `README.md`, `generate_readme.py`, va `WAKATIME_PROFILE.info` bo‘ladi.
 
----
+## Qo'shimcha
+Agar siz to‘liq, JS bilan render qilingan statistikani xohlasangiz (til bo‘yicha chartlar, soatlik graflar), `generate_readme.py` ni Playwright yoki WakaTime rasmiy API (token talab qiladi) bilan kengaytirish kerak.
 
-### 📊 Languages Usage
-<!-- LANGUAGES USAGE WILL BE UPDATED AUTOMATICALLY -->
+Profile URL: https://wakatime.com/@mustaforahim2009
 
----
-
-### 📊 GitHub Stats
-![Mustafo's GitHub stats](https://github-readme-stats.vercel.app/api?username=Developer-Mustafo&show_icons=true&theme=radical)
-
----
-
-### 🌐 Connect With Me
-- 📧 Email: [mustaforahimov30@gmail.com](mailto:mustaforahimov30@gmail.com)  
-- 💬 Telegram: [@mustafo_rahim_2009](https://t.me/mustafo_rahim_2009)  
-- 💼 LinkedIn: [Mustafo Rahim](https://www.linkedin.com/in/mustafo-rahim-4a0384324)
+_— Siz uchun tayyorlangan arxiv (ichida skript va placeholder README)._

@@ -1,4 +1,3 @@
-```python
 import os
 import requests
 from datetime import datetime, timezone
@@ -101,10 +100,9 @@ I'm a passionate Android developer specializing in modern mobile technologies. I
 
 ## 🤝 Let's Connect
 
-- **📧 Email**: your.email@example.com
-- **💼 LinkedIn**: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- **📱 Telegram**: [@yourusername](https://t.me/yourusername)
-- **🌐 Portfolio**: [yourportfolio.com](https://yourportfolio.com)
+- **📧 Email**: mustaforahi30@gmail.com
+- **💼 LinkedIn**: [Mustafo Rahim](https://www.linkedin.com/in/mustafo-rahim-4a0384324)
+- **📱 Telegram**: [@mustafo_rahim_2009](https://t.me/mustafo_rahim_2009)
 
 ---
 
@@ -136,4 +134,3 @@ if __name__ == "__main__":
     
     print("✅ README.md updated successfully!")
     print("🎉 Process completed successfully!")
-```

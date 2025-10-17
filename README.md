@@ -1,33 +1,87 @@
-# WakaTime profile summary — @mustaforahim2009
+# 👋 Hello, I'm Mustafo!
 
-⚠️ Diqqat: Bu fayl brauzer yoki internet orqali sahifani to'g'ridan-to'g'ri yuklab olishga uringan holda avtomatik yaratilmadi.
-Sizga keyingi bosqichlarni bajarish uchun zarur bo‘lgan fayllar `generate_readme.py` bilan birga berilmoqda.
+## 🚀 Android Developer & Kotlin Enthusiast
 
-## Nima bor
-- `generate_readme.py` — WakaTime profilidan README.md yaratish uchun Python skripti.
-- `WAKATIME_PROFILE.info` — profil URL haqida kichik metadata.
-- `README.md` — hozirgi placeholder/fayl (bu faylni avtomatik to'ldirish uchun pastdagi ko'rsatmalarga qarang).
+I'm a passionate Android developer specializing in modern mobile technologies. I love creating clean, efficient, and user-friendly applications.
 
-## Qanday ishlatish
-1. Terminalda Python3 o'rnatilganiga ishonch hosil qiling.
-2. Zarur kutubxonalarni o'rnating:
-   ```bash
-   pip3 install requests beautifulsoup4
-   ```
-3. Skriptni ishga tushiring:
-   ```bash
-   python3 generate_readme.py
-   ```
-   Skript `README.md` faylini yaratadi va `wakatime_readme.tar` arxivini hosil qiladi.
-4. Arxivni chiqarish:
-   ```bash
-   tar -xvf wakatime_readme.tar
-   ```
-   Ichida `README.md`, `generate_readme.py`, va `WAKATIME_PROFILE.info` bo‘ladi.
+## 📊 Weekly Development Analytics
 
-## Qo'shimcha
-Agar siz to‘liq, JS bilan render qilingan statistikani xohlasangiz (til bo‘yicha chartlar, soatlik graflar), `generate_readme.py` ni Playwright yoki WakaTime rasmiy API (token talab qiladi) bilan kengaytirish kerak.
+### ⏱️ Coding Time (Last 7 Days)
+- **Total Time**: 14 hrs 42 mins
+- **Daily Average**: 2 hrs 27 mins
 
-Profile URL: https://wakatime.com/@mustaforahim2009
+### 💻 Top Languages This Week
 
-_— Siz uchun tayyorlangan arxiv (ichida skript va placeholder README)._
+`█████████████████░░░` 85.9% **Kotlin** - 12 hrs 38 mins
+`█░░░░░░░░░░░░░░░░░░░` 4.5% **XML** - 39 mins
+`█░░░░░░░░░░░░░░░░░░░` 3.9% **Java** - 34 mins
+`█░░░░░░░░░░░░░░░░░░░` 2.9% **Properties** - 25 mins
+`░░░░░░░░░░░░░░░░░░░░` 1.2% **Python** - 10 mins
+`░░░░░░░░░░░░░░░░░░░░` 0.7% **TOML** - 5 mins
+
+
+### 🎯 Current Focus
+- **Primary Language**: Kotlin
+- **Specialization**: Android Development
+- **Interests**: Mobile Apps, Clean Architecture, Jetpack Compose
+
+## 🛠️ Tech Stack
+
+**Mobile Development:**
+- **Kotlin** - Primary language for Android development
+- **Java** - Enterprise-level Android applications  
+- **XML** - UI/UX design and layouts
+- **Jetpack Compose** - Modern declarative UI
+- **Room Database** - Local data persistence
+- **Retrofit** - REST API integration
+- **Coroutines & Flow** - Asynchronous programming
+
+**Other Technologies:**
+- **Python** - Scripting and automation
+- **Git** - Version control
+- **Android Studio** - Primary IDE
+
+## 📈 GitHub Stats
+
+<div align="center">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Developer-Mustafo&show_icons=true&theme=radical&hide_border=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Developer-Mustafo&layout=compact&theme=radical&hide_border=true)
+
+</div>
+
+## 🔥 Current Streak
+
+<div align="center">
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Developer-Mustafo&theme=radical&hide_border=true)
+
+</div>
+
+## 🤝 Let's Connect
+
+- **📧 Email**: your.email@example.com
+- **💼 LinkedIn**: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+- **📱 Telegram**: [@yourusername](https://t.me/yourusername)
+- **🌐 Portfolio**: [yourportfolio.com](https://yourportfolio.com)
+
+## 💡 Currently Learning
+
+- Advanced Kotlin Coroutines
+- Jetpack Compose Mastery  
+- Clean Architecture Patterns
+- Testing in Android
+- CI/CD for Mobile Apps
+
+---
+
+<div align="center">
+
+### ⚡ Coding Philosophy
+*"Write code that not only works but tells a story!"*
+
+**📅 Last Updated**: 2025-10-17 10:50 UTC
+
+*This README is automatically updated with WakaTime stats*
+
+</div>

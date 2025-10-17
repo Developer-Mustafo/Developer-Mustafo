@@ -1,6 +1,6 @@
-# 👋 Hello, I'm Mustafo!
+## 👋 Hello, I'm Mustafo!
 
-## 🚀 Android Developer & Kotlin Enthusiast
+### 🚀 Android Developer & Kotlin Enthusiast
 
 I'm a passionate Android developer specializing in modern mobile technologies. I love creating clean, efficient, and user-friendly applications.
 
@@ -12,18 +12,13 @@ I'm a passionate Android developer specializing in modern mobile technologies. I
 
 ### 💻 Top Languages This Week
 
-`█████████████████░░░` 85.9% **Kotlin** - 12 hrs 38 mins
-`█░░░░░░░░░░░░░░░░░░░` 4.5% **XML** - 39 mins
-`█░░░░░░░░░░░░░░░░░░░` 3.9% **Java** - 34 mins
-`█░░░░░░░░░░░░░░░░░░░` 2.9% **Properties** - 25 mins
-`░░░░░░░░░░░░░░░░░░░░` 1.2% **Python** - 10 mins
-`░░░░░░░░░░░░░░░░░░░░` 0.7% **TOML** - 5 mins
+`█████████████░░` **85.9%** Kotlin - 12 hrs 38 mins
+`█░░░░░░░░░░░░░░` **4.5%** XML - 39 mins
+`█░░░░░░░░░░░░░░` **3.9%** Java - 34 mins
+`░░░░░░░░░░░░░░░` **2.9%** Properties - 25 mins
+`░░░░░░░░░░░░░░░` **1.2%** Python - 10 mins
+`░░░░░░░░░░░░░░░` **0.7%** TOML - 5 mins
 
-
-### 🎯 Current Focus
-- **Primary Language**: Kotlin
-- **Specialization**: Android Development
-- **Interests**: Mobile Apps, Clean Architecture, Jetpack Compose
 
 ## 🛠️ Tech Stack
 
@@ -48,30 +43,15 @@ I'm a passionate Android developer specializing in modern mobile technologies. I
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Developer-Mustafo&show_icons=true&theme=radical&hide_border=true)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Developer-Mustafo&layout=compact&theme=radical&hide_border=true)
 
-</div>
-
-## 🔥 Current Streak
-
-<div align="center">
-
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Developer-Mustafo&theme=radical&hide_border=true)
 
 </div>
 
 ## 🤝 Let's Connect
 
-- **📧 Email**: your.email@example.com
-- **💼 LinkedIn**: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- **📱 Telegram**: [@yourusername](https://t.me/yourusername)
-- **🌐 Portfolio**: [yourportfolio.com](https://yourportfolio.com)
-
-## 💡 Currently Learning
-
-- Advanced Kotlin Coroutines
-- Jetpack Compose Mastery  
-- Clean Architecture Patterns
-- Testing in Android
-- CI/CD for Mobile Apps
+- **📧 Email**: mustaforahi30@gmail.com
+- **💼 LinkedIn**: [Mustafo Rahim](https://www.linkedin.com/in/mustafo-rahim-4a0384324)
+- **📱 Telegram**: [@mustafo_rahim_2009](https://t.me/mustafo_rahim_2009)
 
 ---
 
@@ -80,7 +60,7 @@ I'm a passionate Android developer specializing in modern mobile technologies. I
 ### ⚡ Coding Philosophy
 *"Write code that not only works but tells a story!"*
 
-**📅 Last Updated**: 2025-10-17 10:50 UTC
+**📅 Last Updated**: 2025-10-17 11:22 UTC
 
 *This README is automatically updated with WakaTime stats*
 

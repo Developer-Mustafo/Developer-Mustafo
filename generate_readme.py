@@ -50,7 +50,7 @@ def generate_readme(stats):
             time = lang.get('text', '0 mins')
             percent = lang.get('percent', 0)
             bar = create_progress_bar(percent)
-            stats_table += f"`{bar}` **{percent:.1f}%** {name} - {time}\n"
+            stats_table += f"\n`{bar}` **{percent:.1f}%** {name} - {time}\n"
     else:
         stats_table = "_No coding activity this week_"
 

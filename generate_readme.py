@@ -94,8 +94,6 @@ I'm a passionate Android developer specializing in modern mobile technologies. I
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Developer-Mustafo&show_icons=true&theme=radical&hide_border=true)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Developer-Mustafo&layout=compact&theme=radical&hide_border=true)
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Developer-Mustafo&theme=radical&hide_border=true)
-
 </div>
 
 ## 🤝 Let's Connect

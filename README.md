@@ -55,9 +55,9 @@ I'm a passionate Android developer specializing in modern mobile technologies. I
 
 ## 🤝 Let's Connect
 
-- **📧 Email**: mustaforahi30@gmail.com
-- **💼 LinkedIn**: [Mustafo Rahim](https://www.linkedin.com/in/mustafo-rahim-4a0384324)
-- **📱 Telegram**: [@mustafo_rahim_2009](https://t.me/mustafo_rahim_2009)
+- **📧 Email**: [Mustafo](rahim.mustafo.x@gmail.com)
+- **💼 LinkedIn**: [LinkedIn](https://www.linkedin.com/in/mustafo-rahim-4a0384324)
+- **📱 Telegram**: [Telegram](https://t.me/rahim_mustafo_x)
 
 ---
 
@@ -66,7 +66,7 @@ I'm a passionate Android developer specializing in modern mobile technologies. I
 ### ⚡ Coding Philosophy
 *"Write code that not only works but tells a story!"*
 
-**📅 Last Updated**: 2025-10-28 01:24 UTC
+**📅 Last Updated**: 2025-10-28 10:18 UTC
 
 *This README is automatically updated with WakaTime stats*
 

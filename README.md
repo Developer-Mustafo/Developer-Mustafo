@@ -7,11 +7,24 @@ I'm a passionate Android developer specializing in modern mobile technologies. I
 ## 📊 Weekly Development Analytics
 
 ### ⏱️ Coding Time (Last 7 Days)
-- **Total Time**: 0 mins
-- **Daily Average**: 0 mins
+- **Total Time**: 9 hrs
+- **Daily Average**: 1 hr 48 mins
 
 ### 💻 Top Languages This Week
-_No coding activity this week_
+
+
+`██████░░░░░░░░░` **41.0%** Python - 3 hrs 41 mins
+
+`██████░░░░░░░░░` **36.9%** Kotlin - 3 hrs 19 mins
+
+`██░░░░░░░░░░░░░` **11.8%** C++ - 1 hr 3 mins
+
+`█░░░░░░░░░░░░░░` **4.1%** Text - 21 mins
+
+`░░░░░░░░░░░░░░░` **1.7%** Java - 9 mins
+
+`░░░░░░░░░░░░░░░` **1.3%** TOML - 6 mins
+
 
 ## 🛠️ Tech Stack
 
@@ -51,7 +64,7 @@ _No coding activity this week_
 ### ⚡ Coding Philosophy
 *"Write code that not only works but tells a story!"*
 
-**📅 Last Updated**: 2025-11-03 01:40 UTC
+**📅 Last Updated**: 2025-11-03 12:41 UTC
 
 *This README is automatically updated with WakaTime stats*
 

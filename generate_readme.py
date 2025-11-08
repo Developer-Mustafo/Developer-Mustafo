@@ -45,6 +45,13 @@ def make_typing_svg_url(lines, font="Fira+Code", size=18, pause=1000, color="00F
     lines_joined = "%0A".join([line.strip().replace(" ", "+") for line in lines])
     url = f"{TYPING_BASE}?font={font}&size={size}&pause={pause}&color={color}&width={width}&height={height}&lines={lines_joined}&center=true&multiline=true&repeat=false"
     return url
+# Dynamic typing one by one
+about_lines = USER['about_lines']
+
+about_lines_typing = "\n".join([
+    f'<img src="{make_typing_svg_url([line], size=24, width=600, color="00FF2B")}" alt="Typing SVG"/>' 
+    for line in about_lines
+])
 
 # -------------------------
 # README GENERATION
@@ -75,7 +82,7 @@ def generate_readme(user):
 <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" width="100%" />
 
 <!-- Typing dynamic "About Me" below snake -->
-<img src="{make_typing_svg_url(user['about_lines'], size=24, width=600, color='00FF2B')}" alt="Typing SVG"/>
+{about_lines_typing}
 
 <!-- Subtitle -->
 <img src="{make_typing_svg_url(['Full Stack Android Developer'], size=18, width=700, color='58A6FF')}" alt="Typing SVG"/>

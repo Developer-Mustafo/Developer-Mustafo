@@ -12,10 +12,10 @@ USER = {
     "linkedin": "https://www.linkedin.com/in/mustafo-rahim-4a0384324",
     "portfolio": "http://davomat-app.uz",
     "about_lines": [
-        "Android Developer — Kotlin & Jetpack Compose expert",
-        "Backend Developer — Spring Boot & Ktor",
-        "Telegram Bots — Aiogram, automation & AI integrations",
-        "Passionate about clean architecture, tests & performance"
+        "I am an Android Developer",
+        "I write Telegram bots",
+        "I build backend APIs",
+        "I love clean code & architecture"
     ],
     "tech_stack": [
         "Kotlin — Primary Android language, concise and safe",
@@ -32,16 +32,17 @@ USER = {
     ]
 }
 
+# -------------------------
+# TYPING SVG GENERATOR
+# -------------------------
 TYPING_BASE = "https://readme-typing-svg.demolab.com"
 
 def make_typing_svg_url(lines, font="Fira+Code", size=18, pause=1000, color="00FF2B", width=500, height=50):
     """
-    lines: list of strings (har bir line typing qilinadi)
-    returns: to'g'ri ishlaydigan SVG URL
+    lines: list of strings (each line will appear in typing animation)
+    returns: SVG URL for README
     """
-    # lines %0A bilan ajratiladi
     lines_joined = "%0A".join([line.strip().replace(" ", "+") for line in lines])
-    
     url = f"{TYPING_BASE}?font={font}&size={size}&pause={pause}&color={color}&width={width}&height={height}&lines={lines_joined}&center=true&multiline=true&repeat=false"
     return url
 
@@ -65,16 +66,16 @@ def generate_readme(user):
                 for cat in user["skills_icons"][i:i+2]
             ]) + " |\n\n"
 
-    # About me section
-    about_me_md = "\n".join([f"• {line}" for line in user["about_lines"]])
-
+    # -------------------------
+    # README CONTENT
+    # -------------------------
     readme = f"""<div align="center">
 
 <!-- Snake Animation -->
 <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" width="100%" />
 
-<!-- Typing Intro -->
-<img src="{make_typing_svg_url(['Salom, Men Mustafo Rahimman 👋'], size=28, width=600, color='00FF2B')}" alt="Typing SVG"/>
+<!-- Typing dynamic "About Me" below snake -->
+<img src="{make_typing_svg_url(user['about_lines'], size=24, width=600, color='00FF2B')}" alt="Typing SVG"/>
 
 <!-- Subtitle -->
 <img src="{make_typing_svg_url(['Full Stack Android Developer'], size=18, width=700, color='58A6FF')}" alt="Typing SVG"/>
@@ -86,14 +87,6 @@ def generate_readme(user):
 </p>
 
 </div>
-
----
-
-## 👨‍💻 About Me
-
-<img src="{make_typing_svg_url(['About Me:'], size=20, width=300, color='00FF2B')}" alt="Typing SVG" />
-
-{about_me_md}
 
 ---
 

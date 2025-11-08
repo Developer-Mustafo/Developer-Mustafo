@@ -34,9 +34,13 @@ USER = {
 
 TYPING_BASE = "https://readme-typing-svg.demolab.com"
 
-def make_typing_svg_url(lines, font="Fira+Code", size=15, pause=1000, color="00FF2B", width=950, height=75):
-    lines_joined = ";".join([l.replace(";", ",") for l in lines])
-    params = f"font={font}&size={size}&pause={pause}&color={color}&width={width}&height={height}&lines={lines_joined}&center=true&vCenter=true&multiline=true&repeat=false&random=false"
+def make_typing_svg_url(lines, font="Fira+Code", size=18, pause=1000, color="00FF2B", width=500, height=50):
+    """
+    lines: list of strings (each line will appear in typing animation)
+    returns: SVG URL for README
+    """
+    lines_joined = "%0A".join([line.replace("\n", "") for line in lines])
+    params = f"font={font}&size={size}&pause={pause}&color={color}&width={width}&height={height}&lines={lines_joined}&center=true&multiline=true&repeat=false"
     return f"{TYPING_BASE}?{params}"
 
 # -------------------------
@@ -68,14 +72,10 @@ def generate_readme(user):
 <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" width="100%" />
 
 <!-- Typing Intro -->
-<a href="https://git.io/typing-svg">
-  <img src="{make_typing_svg_url(['Salom, Men Mustafo Rahimman 👋'], size=28, width=600, color='00FF2B')}" alt="Typing SVG"/>
-</a>
+<img src="{make_typing_svg_url(['Salom, Men Mustafo Rahimman 👋'], size=28, width=600, color='00FF2B')}" alt="Typing SVG"/>
 
 <!-- Subtitle -->
-<a href="https://git.io/typing-svg">
-  <img src="{make_typing_svg_url(['Full Stack Android Developer'], size=18, width=700, color='58A6FF')}" alt="Typing SVG"/>
-</a>
+<img src="{make_typing_svg_url(['Full Stack Android Developer'], size=18, width=700, color='58A6FF')}" alt="Typing SVG"/>
 
 <!-- Stats -->
 <p align="center">
@@ -89,11 +89,7 @@ def generate_readme(user):
 
 ## 👨‍💻 About Me
 
-<div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="{make_typing_svg_url(['About Me:'], size=20, width=300, color='00FF2B')}" alt="Typing SVG" />
-  </a>
-</div>
+<img src="{make_typing_svg_url(['About Me:'], size=20, width=300, color='00FF2B')}" alt="Typing SVG" />
 
 {about_me_md}
 
@@ -101,11 +97,7 @@ def generate_readme(user):
 
 ## 🛠️ Tech Stack
 
-<div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="{make_typing_svg_url(['Technologies & Tools:'], size=20, width=400, color='00FF2B')}" alt="Typing SVG" />
-  </a>
-</div>
+<img src="{make_typing_svg_url(['Technologies & Tools:'], size=20, width=400, color='00FF2B')}" alt="Typing SVG" />
 
 {skills_table}
 
@@ -115,11 +107,8 @@ def generate_readme(user):
 
 <div align="center">
 
-<!-- GitHub Stats -->
 <img src="https://github-readme-stats.vercel.app/api?username={user['github_username']}&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=00FF2B&icon_color=00FF2B" alt="GitHub Stats" height="160" />
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username={user['github_username']}&layout=compact&theme=dark&hide_border=true&bg_color=0D1117&title_color=00FF2B" alt="Top Languages" height="160" />
-
-<!-- Streak Stats -->
 <img src="https://github-readme-streak-stats.herokuapp.com/?user={user['github_username']}&theme=dark&hide_border=true&background=0D1117&stroke=00FF2B&ring=00FF2B&fire=00FF2B&currStreakLabel=00FF2B" alt="GitHub Streak" />
 
 </div>
@@ -128,15 +117,9 @@ def generate_readme(user):
 
 ## 📫 Connect With Me
 
-<div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="{make_typing_svg_url(['Get In Touch:'], size=20, width=300, color='00FF2B')}" alt="Typing SVG" />
-  </a>
-</div>
+<img src="{make_typing_svg_url(['Get In Touch:'], size=20, width=300, color='00FF2B')}" alt="Typing SVG" />
 
 <div align="center">
-
-<!-- Contact Badges -->
 <a href="{user['telegram']}">
   <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
 </a>
@@ -152,7 +135,6 @@ def generate_readme(user):
 <a href="{user['portfolio']}">
   <img src="https://img.shields.io/badge/Portfolio-FF7139?style=for-the-badge&logo=firefox&logoColor=white" alt="Portfolio" />
 </a>
-
 </div>
 
 ---
@@ -164,7 +146,6 @@ def generate_readme(user):
 **Last Updated:** {updated_time}
 
 </div>
-
 """
     return readme
 

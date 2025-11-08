@@ -4,14 +4,10 @@
 <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" width="100%" />
 
 <!-- Typing Intro -->
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=00FF2B&width=600&height=75&lines=Salom, Men Mustafo Rahimman 👋&center=true&vCenter=true&multiline=true&repeat=false&random=false" alt="Typing SVG"/>
-</a>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=00FF2B&width=600&height=50&lines=Salom, Men Mustafo Rahimman 👋&center=true&multiline=true&repeat=false" alt="Typing SVG"/>
 
 <!-- Subtitle -->
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=58A6FF&width=700&height=75&lines=Full Stack Android Developer&center=true&vCenter=true&multiline=true&repeat=false&random=false" alt="Typing SVG"/>
-</a>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=58A6FF&width=700&height=50&lines=Full Stack Android Developer&center=true&multiline=true&repeat=false" alt="Typing SVG"/>
 
 <!-- Stats -->
 <p align="center">
@@ -25,11 +21,7 @@
 
 ## 👨‍💻 About Me
 
-<div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=00FF2B&width=300&height=75&lines=About Me:&center=true&vCenter=true&multiline=true&repeat=false&random=false" alt="Typing SVG" />
-  </a>
-</div>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=00FF2B&width=300&height=50&lines=About Me:&center=true&multiline=true&repeat=false" alt="Typing SVG" />
 
 • Android Developer — Kotlin & Jetpack Compose expert
 • Backend Developer — Spring Boot & Ktor
@@ -40,11 +32,7 @@
 
 ## 🛠️ Tech Stack
 
-<div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=00FF2B&width=400&height=75&lines=Technologies & Tools:&center=true&vCenter=true&multiline=true&repeat=false&random=false" alt="Typing SVG" />
-  </a>
-</div>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=00FF2B&width=400&height=50&lines=Technologies & Tools:&center=true&multiline=true&repeat=false" alt="Typing SVG" />
 
 | <div align='center'><h3>Languages</h3></div> | <div align='center'><h3>Frameworks</h3></div> |
 | ---- | ---- |
@@ -62,11 +50,8 @@
 
 <div align="center">
 
-<!-- GitHub Stats -->
 <img src="https://github-readme-stats.vercel.app/api?username=Developer-Mustafo&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=00FF2B&icon_color=00FF2B" alt="GitHub Stats" height="160" />
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Developer-Mustafo&layout=compact&theme=dark&hide_border=true&bg_color=0D1117&title_color=00FF2B" alt="Top Languages" height="160" />
-
-<!-- Streak Stats -->
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=Developer-Mustafo&theme=dark&hide_border=true&background=0D1117&stroke=00FF2B&ring=00FF2B&fire=00FF2B&currStreakLabel=00FF2B" alt="GitHub Streak" />
 
 </div>
@@ -75,15 +60,9 @@
 
 ## 📫 Connect With Me
 
-<div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=00FF2B&width=300&height=75&lines=Get In Touch:&center=true&vCenter=true&multiline=true&repeat=false&random=false" alt="Typing SVG" />
-  </a>
-</div>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=00FF2B&width=300&height=50&lines=Get In Touch:&center=true&multiline=true&repeat=false" alt="Typing SVG" />
 
 <div align="center">
-
-<!-- Contact Badges -->
 <a href="t.me/rahim_mustafo_x">
   <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
 </a>
@@ -99,7 +78,6 @@
 <a href="http://davomat-app.uz">
   <img src="https://img.shields.io/badge/Portfolio-FF7139?style=for-the-badge&logo=firefox&logoColor=white" alt="Portfolio" />
 </a>
-
 </div>
 
 ---
@@ -108,7 +86,6 @@
 
 ### 🎯 "Code is like humor. When you have to explain it, it's bad." - Cory House
 
-**Last Updated:** 2025-11-08 09:50 UTC
+**Last Updated:** 2025-11-08 09:52 UTC
 
 </div>
-

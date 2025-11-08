@@ -4,10 +4,10 @@
 <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" width="100%" />
 
 <!-- Typing Intro -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=00FF2B&width=600&height=50&lines=Salom, Men Mustafo Rahimman 👋&center=true&multiline=true&repeat=false" alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=00FF2B&width=600&height=50&lines=Salom,+Men+Mustafo+Rahimman+👋&center=true&multiline=true&repeat=false" alt="Typing SVG"/>
 
 <!-- Subtitle -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=58A6FF&width=700&height=50&lines=Full Stack Android Developer&center=true&multiline=true&repeat=false" alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=58A6FF&width=700&height=50&lines=Full+Stack+Android+Developer&center=true&multiline=true&repeat=false" alt="Typing SVG"/>
 
 <!-- Stats -->
 <p align="center">
@@ -21,7 +21,7 @@
 
 ## 👨‍💻 About Me
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=00FF2B&width=300&height=50&lines=About Me:&center=true&multiline=true&repeat=false" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=00FF2B&width=300&height=50&lines=About+Me:&center=true&multiline=true&repeat=false" alt="Typing SVG" />
 
 • Android Developer — Kotlin & Jetpack Compose expert
 • Backend Developer — Spring Boot & Ktor
@@ -32,7 +32,7 @@
 
 ## 🛠️ Tech Stack
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=00FF2B&width=400&height=50&lines=Technologies & Tools:&center=true&multiline=true&repeat=false" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=00FF2B&width=400&height=50&lines=Technologies+&+Tools:&center=true&multiline=true&repeat=false" alt="Typing SVG" />
 
 | <div align='center'><h3>Languages</h3></div> | <div align='center'><h3>Frameworks</h3></div> |
 | ---- | ---- |
@@ -60,7 +60,7 @@
 
 ## 📫 Connect With Me
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=00FF2B&width=300&height=50&lines=Get In Touch:&center=true&multiline=true&repeat=false" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=00FF2B&width=300&height=50&lines=Get+In+Touch:&center=true&multiline=true&repeat=false" alt="Typing SVG" />
 
 <div align="center">
 <a href="t.me/rahim_mustafo_x">
@@ -86,6 +86,6 @@
 
 ### 🎯 "Code is like humor. When you have to explain it, it's bad." - Cory House
 
-**Last Updated:** 2025-11-08 09:53 UTC
+**Last Updated:** 2025-11-08 09:56 UTC
 
 </div>

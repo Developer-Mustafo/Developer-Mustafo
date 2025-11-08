@@ -7,14 +7,10 @@ from datetime import datetime, timezone
 USER = {
     "name": "Mustafo Rahim",
     "github_username": "Developer-Mustafo",
-    "email": "rahim.mustafo.x@gmail.com",
+    "email": "mustaforahimov30@gmail.com",
     "telegram": "t.me/rahim_mustafo_x",
     "linkedin": "https://www.linkedin.com/in/mustafo-rahim-4a0384324",
     "portfolio": "http://davomat-app.uz",
-    "top_projects": [
-        {"name": "Urgench Smart City", "link": "https://urganchshahar.uz", "description": "Smart city platform for Urgench"},
-        {"name": "E-Ijro Platform", "link": "http://90.156.199.148:7072/login", "description": "Electronic execution platform"}
-    ],
     "about_lines": [
         "Android Developer — Kotlin & Jetpack Compose expert",
         "Backend Developer — Spring Boot & Ktor",
@@ -29,10 +25,10 @@ USER = {
         "Python (Aiogram) — Telegram bots & automation"
     ],
     "skills_icons": [
-        {"category": "Languages", "icons": ["java","kotlin","javascript","typescript","python","html","css"]},
-        {"category": "Frameworks", "icons": ["android","spring","ktor","compose","tailwind","thymeleaf"]},
-        {"category": "Tools", "icons": ["git","github","gitlab","docker","postgresql","redis"]},
-        {"category": "Platforms", "icons": ["linux","windows","androidstudio","intellij","vscode"]}
+        {"category": "Languages", "icons": ["java","kotlin","javascript","python","html","css"]},
+        {"category": "Frameworks", "icons": ["spring","springboot","android","compose","aiogram"]},
+        {"category": "Tools", "icons": ["git","github","postgresql","ubuntu"]},
+        {"category": "Platforms", "icons": ["linux","androidstudio","intellij","vscode"]}
     ]
 }
 
@@ -62,16 +58,6 @@ def generate_readme(user):
                 "<div align='center'>" + "".join([f'<img src="https://skillicons.dev/icons?i={icon}" alt="{icon}" title="{icon}" height="40" />' for icon in cat["icons"]]) + "</div>"
                 for cat in user["skills_icons"][i:i+2]
             ]) + " |\n\n"
-
-    # Top projects with better formatting
-    top_projects_md = ""
-    for p in user["top_projects"]:
-        top_projects_md += f"""
-### 🚀 {p['name']}
-**🔗 Link:** [{p['link']}]({p['link']})  
-**📝 Description:** {p.get('description', 'Project description')}  
-
-"""
 
     # About me section
     about_me_md = "\n".join([f"• {line}" for line in user["about_lines"]])
@@ -122,18 +108,6 @@ def generate_readme(user):
 </div>
 
 {skills_table}
-
----
-
-## 🌟 Featured Projects
-
-<div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="{make_typing_svg_url(['My Top Projects:'], size=20, width=350, color='00FF2B')}" alt="Typing SVG" />
-  </a>
-</div>
-
-{top_projects_md}
 
 ---
 

@@ -12,8 +12,8 @@ USER = {
     "linkedin": "https://www.linkedin.com/in/mustafo-rahim-4a0384324",
     "portfolio": "http://davomat-app.uz",
     "top_projects": [
-        {"name": "Urgench Smart City", "link": "https://urganchshahar.uz"},
-        {"name": "E-Ijro Platform", "link": "http://90.156.199.148:7072/login"}
+        {"name": "Urgench Smart City", "link": "https://urganchshahar.uz", "description": "Smart city platform for Urgench"},
+        {"name": "E-Ijro Platform", "link": "http://90.156.199.148:7072/login", "description": "Electronic execution platform"}
     ],
     "about_lines": [
         "Android Developer — Kotlin & Jetpack Compose expert",
@@ -29,11 +29,10 @@ USER = {
         "Python (Aiogram) — Telegram bots & automation"
     ],
     "skills_icons": [
-        {"category": "Languages", "icons": ["java","kotlin","js","html","css","python"]},
-        {"category": "Frameworks", "icons": ["spring","springboot","tailwind","thymeleaf"]},
-        {"category": "IDEs", "icons": ["androidstudio","vscode","intellij"]},
-        {"category": "Tools", "icons": ["git","github","gitlab"]},
-        {"category": "Operating Systems", "icons": ["windows","ubuntu"]}
+        {"category": "Languages", "icons": ["java","kotlin","javascript","typescript","python","html","css"]},
+        {"category": "Frameworks", "icons": ["android","spring","ktor","compose","tailwind","thymeleaf"]},
+        {"category": "Tools", "icons": ["git","github","gitlab","docker","postgresql","redis"]},
+        {"category": "Platforms", "icons": ["linux","windows","androidstudio","intellij","vscode"]}
     ]
 }
 
@@ -51,83 +50,147 @@ def generate_readme(user):
     updated_time = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     
     # Skills icons table
-    skills_table = "| " + " | ".join([f"[![Typing SVG]({make_typing_svg_url([cat['category']], size=25, width=200)})](https://git.io/typing-svg)" for cat in user["skills_icons"]]) + " |\n"
-    skills_table += "| " + " | ".join(["----"] * len(user["skills_icons"])) + " |\n"
-    
-    icons_row = "| " + " | ".join([
-        "<div align='center'>" + "".join([f'<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i={i}" title="{i}"/></a>' for i in cat["icons"]]) + "</div>"
-        for cat in user["skills_icons"]
-    ]) + " |\n"
+    skills_table = ""
+    for i, category in enumerate(user["skills_icons"]):
+        if i % 2 == 0:
+            skills_table += "| " + " | ".join([
+                f"<div align='center'><h3>{cat['category']}</h3></div>"
+                for cat in user["skills_icons"][i:i+2]
+            ]) + " |\n"
+            skills_table += "| " + " | ".join(["----"] * 2) + " |\n"
+            skills_table += "| " + " | ".join([
+                "<div align='center'>" + "".join([f'<img src="https://skillicons.dev/icons?i={icon}" alt="{icon}" title="{icon}" height="40" />' for icon in cat["icons"]]) + "</div>"
+                for cat in user["skills_icons"][i:i+2]
+            ]) + " |\n\n"
 
-    # Top projects
+    # Top projects with better formatting
     top_projects_md = ""
     for p in user["top_projects"]:
-        top_projects_md += f"**📋 [{p['name']}]({p['link']})**\n\n"
+        top_projects_md += f"""
+### 🚀 {p['name']}
+**🔗 Link:** [{p['link']}]({p['link']})  
+**📝 Description:** {p.get('description', 'Project description')}  
+
+"""
+
+    # About me section
+    about_me_md = "\n".join([f"• {line}" for line in user["about_lines"]])
 
     readme = f"""<div align="center">
-<img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
+
+<!-- Snake Animation -->
+<img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" width="100%" />
+
+<!-- Typing Intro -->
 <a href="https://git.io/typing-svg">
-  <img src="{make_typing_svg_url(['Men haqimda :'], size=28, width=1000)}" alt="Typing SVG"/>
+  <img src="{make_typing_svg_url(['Salom, Men Mustafo Rahimman 👋'], size=28, width=600, color='00FF2B')}" alt="Typing SVG"/>
 </a>
+
+<!-- Subtitle -->
 <a href="https://git.io/typing-svg">
-  <img src="{make_typing_svg_url(['{0}, Android va Backend Developer'.format(user['name'])], size=15)}" alt="Typing SVG"/>
+  <img src="{make_typing_svg_url(['Full Stack Android Developer'], size=18, width=700, color='58A6FF')}" alt="Typing SVG"/>
 </a>
+
+<!-- Stats -->
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username={user['github_username']}&color=00FF2B&style=flat-square&label=Profile+Views" alt="Profile Views" />
+  <img src="https://img.shields.io/github/followers/{user['github_username']}?color=58A6FF&label=Followers&style=flat-square" alt="GitHub Followers" />
+</p>
+
 </div>
 
 ---
 
-## 🛠️ Skills & Technologies
+## 👨‍💻 About Me
+
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="{make_typing_svg_url(['About Me:'], size=20, width=300, color='00FF2B')}" alt="Typing SVG" />
+  </a>
+</div>
+
+{about_me_md}
+
+---
+
+## 🛠️ Tech Stack
+
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="{make_typing_svg_url(['Technologies & Tools:'], size=20, width=400, color='00FF2B')}" alt="Typing SVG" />
+  </a>
+</div>
+
 {skills_table}
-{icons_row}
 
 ---
 
-## 🌐 Portfolio
+## 🌟 Featured Projects
+
 <div align="center">
   <a href="https://git.io/typing-svg">
-    <img src="{make_typing_svg_url(['Portfolio:'], size=15, width=850)}" alt="Typing SVG" />
+    <img src="{make_typing_svg_url(['My Top Projects:'], size=20, width=350, color='00FF2B')}" alt="Typing SVG" />
   </a>
 </div>
-**🔗 [{user['portfolio']}]({user['portfolio']})**
 
----
-
-## 🚀 Top Projects
-<div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="{make_typing_svg_url(['Top Projects:'], size=15, width=850)}" alt="Typing SVG" />
-  </a>
-</div>
 {top_projects_md}
 
 ---
 
-## 📞 Contact Me
+## 📊 GitHub Stats
+
+<div align="center">
+
+<!-- GitHub Stats -->
+<img src="https://github-readme-stats.vercel.app/api?username={user['github_username']}&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=00FF2B&icon_color=00FF2B" alt="GitHub Stats" height="160" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username={user['github_username']}&layout=compact&theme=dark&hide_border=true&bg_color=0D1117&title_color=00FF2B" alt="Top Languages" height="160" />
+
+<!-- Streak Stats -->
+<img src="https://github-readme-streak-stats.herokuapp.com/?user={user['github_username']}&theme=dark&hide_border=true&background=0D1117&stroke=00FF2B&ring=00FF2B&fire=00FF2B&currStreakLabel=00FF2B" alt="GitHub Streak" />
+
+</div>
+
+---
+
+## 📫 Connect With Me
+
 <div align="center">
   <a href="https://git.io/typing-svg">
-    <img src="{make_typing_svg_url(['Contact with me:'], size=15, width=950)}" alt="Typing SVG" />
+    <img src="{make_typing_svg_url(['Get In Touch:'], size=20, width=300, color='00FF2B')}" alt="Typing SVG" />
   </a>
 </div>
 
 <div align="center">
-  <a href="{user['telegram']}">
-    <img src="https://img.shields.io/badge/Telegram-1DA1F2?style=for-the-badge&logo=telegram&logoColor=white" />
-  </a>&nbsp;
-  <a href="mailto:{user['email']}">
-    <img src="https://img.shields.io/badge/gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>&nbsp;
-  <a href="{user['linkedin']}">
-    <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>&nbsp;
+
+<!-- Contact Badges -->
+<a href="{user['telegram']}">
+  <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
+</a>
+<a href="mailto:{user['email']}">
+  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+</a>
+<a href="{user['linkedin']}">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+</a>
+<a href="https://github.com/{user['github_username']}">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+</a>
+<a href="{user['portfolio']}">
+  <img src="https://img.shields.io/badge/Portfolio-FF7139?style=for-the-badge&logo=firefox&logoColor=white" alt="Portfolio" />
+</a>
+
 </div>
 
 ---
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username={user['github_username']}&color=00FF2B&style=flat-square&label=Profile+Views" alt="Profile Views" />
+
+### 🎯 "Code is like humor. When you have to explain it, it's bad." - Cory House
+
+**Last Updated:** {updated_time}
+
 </div>
 
-**📅 Last Updated**: {updated_time}
 """
     return readme
 

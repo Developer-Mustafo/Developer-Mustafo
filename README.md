@@ -4,7 +4,10 @@
 <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" width="100%" />
 
 <!-- Typing dynamic "About Me" below snake -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00FF2B&width=600&height=50&lines=I+am+an+Android+Developer%0AI+write+Telegram+bots%0AI+build+backend+APIs%0AI+love+clean+code+&+architecture&center=true&multiline=true&repeat=false" alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00FF2B&width=600&height=50&lines=I+am+an+Android+Developer&center=true&multiline=true&repeat=false" alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00FF2B&width=600&height=50&lines=I+write+Telegram+bots&center=true&multiline=true&repeat=false" alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00FF2B&width=600&height=50&lines=I+build+backend+APIs&center=true&multiline=true&repeat=false" alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00FF2B&width=600&height=50&lines=I+love+clean+code+&+architecture&center=true&multiline=true&repeat=false" alt="Typing SVG"/>
 
 <!-- Subtitle -->
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=58A6FF&width=700&height=50&lines=Full+Stack+Android+Developer&center=true&multiline=true&repeat=false" alt="Typing SVG"/>
@@ -75,6 +78,6 @@
 
 ### 🎯 "Code is like humor. When you have to explain it, it's bad." - Cory House
 
-**Last Updated:** 2025-11-08 10:00 UTC
+**Last Updated:** 2025-11-08 10:03 UTC
 
 </div>

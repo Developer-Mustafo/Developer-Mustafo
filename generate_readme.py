@@ -36,12 +36,14 @@ TYPING_BASE = "https://readme-typing-svg.demolab.com"
 
 def make_typing_svg_url(lines, font="Fira+Code", size=18, pause=1000, color="00FF2B", width=500, height=50):
     """
-    lines: list of strings (each line will appear in typing animation)
-    returns: SVG URL for README
+    lines: list of strings (har bir line typing qilinadi)
+    returns: to'g'ri ishlaydigan SVG URL
     """
-    lines_joined = "%0A".join([line.replace("\n", "") for line in lines])
-    params = f"font={font}&size={size}&pause={pause}&color={color}&width={width}&height={height}&lines={lines_joined}&center=true&multiline=true&repeat=false"
-    return f"{TYPING_BASE}?{params}"
+    # lines %0A bilan ajratiladi
+    lines_joined = "%0A".join([line.strip().replace(" ", "+") for line in lines])
+    
+    url = f"{TYPING_BASE}?font={font}&size={size}&pause={pause}&color={color}&width={width}&height={height}&lines={lines_joined}&center=true&multiline=true&repeat=false"
+    return url
 
 # -------------------------
 # README GENERATION

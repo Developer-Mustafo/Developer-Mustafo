@@ -44,8 +44,7 @@ TYPING_PARAMS = {
     "pause": "800",
     "color": "FF6A00",
     "width": "760",
-    "height": "90",
-    "lines": None  # will be filled per usage
+    "height": "90"
 }
 
 # GIF download toggle: agar LOCAL_GIF=true bo'lsa yuklab olinadi va README localga bog'lanadi

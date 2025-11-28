@@ -45,13 +45,6 @@ def make_typing_svg_url(lines, font="Fira+Code", size=18, pause=1000, color="00F
     lines_joined = "%0A".join([line.strip().replace(" ", "+") for line in lines])
     url = f"{TYPING_BASE}?font={font}&size={size}&pause={pause}&color={color}&width={width}&height={height}&lines={lines_joined}&center=true&multiline=true&repeat=false"
     return url
-# Dynamic typing one by one
-about_lines = USER['about_lines']
-
-about_lines_typing = "\n".join([
-    f'<img src="{make_typing_svg_url([line], size=24, width=600, color="00FF2B")}" alt="Typing SVG"/>' 
-    for line in about_lines
-])
 
 # -------------------------
 # README GENERATION
@@ -61,17 +54,34 @@ def generate_readme(user):
     
     # Skills icons table
     skills_table = ""
-    for i, category in enumerate(user["skills_icons"]):
-        if i % 2 == 0:
-            skills_table += "| " + " | ".join([
-                f"<div align='center'><h3>{cat['category']}</h3></div>"
-                for cat in user["skills_icons"][i:i+2]
-            ]) + " |\n"
-            skills_table += "| " + " | ".join(["----"] * 2) + " |\n"
-            skills_table += "| " + " | ".join([
-                "<div align='center'>" + "".join([f'<img src="https://skillicons.dev/icons?i={icon}" alt="{icon}" title="{icon}" height="40" />' for icon in cat["icons"]]) + "</div>"
-                for cat in user["skills_icons"][i:i+2]
-            ]) + " |\n\n"
+    for i in range(0, len(user["skills_icons"]), 2):
+        row_categories = user["skills_icons"][i:i+2]
+        
+        # Header row
+        headers = "| " + " | ".join([
+            f"<div align='center'><h3>{cat['category']}</h3></div>"
+            for cat in row_categories
+        ]) + " |\n"
+        
+        # Separator row
+        separators = "| " + " | ".join(["----"] * len(row_categories)) + " |\n"
+        
+        # Icons row
+        icons_row = "| " + " | ".join([
+            "<div align='center'>" + "".join([
+                f'<img src="https://skillicons.dev/icons?i={icon}" alt="{icon}" title="{icon}" height="40" />' 
+                for icon in cat["icons"]
+            ]) + "</div>"
+            for cat in row_categories
+        ]) + " |\n"
+        
+        skills_table += headers + separators + icons_row + "\n"
+
+    # Dynamic typing for about lines
+    about_lines_typing = "\n".join([
+        f'<img src="{make_typing_svg_url([line], size=24, width=600, color="00FF2B")}" alt="Typing SVG"/>' 
+        for line in user['about_lines']
+    ])
 
     # -------------------------
     # README CONTENT

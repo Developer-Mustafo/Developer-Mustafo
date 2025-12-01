@@ -119,11 +119,17 @@ def generate_readme(user):
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username={user['github_username']}&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=00FF2B&icon_color=00FF2B" alt="GitHub Stats" height="160" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username={user['github_username']}&layout=compact&theme=dark&hide_border=true&bg_color=0D1117&title_color=00FF2B" alt="Top Languages" height="160" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user={user['github_username']}&theme=dark&hide_border=true&background=0D1117&stroke=00FF2B&ring=00FF2B&fire=00FF2B&currStreakLabel=00FF2B" alt="GitHub Streak" />
+<!-- GitHub Stats -->
+<img src="https://github-readme-stats.vercel.app/api?username=Developer-Mustafo&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=00FF2B&icon_color=00FF2B&rank_icon=github" height="160" />
+
+<!-- Top Languages -->
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Developer-Mustafo&layout=compact&theme=dark&hide_border=true&bg_color=0D1117&title_color=00FF2B" height="160" />
+
+<!-- Streak Stats -->
+<img src="https://streak-stats.demolab.com?user=Developer-Mustafo&theme=dark&hide_border=true&background=0D1117&stroke=00FF2B&ring=00FF2B&fire=00FF2B&currStreakLabel=00FF2B" height="160" />
 
 </div>
+
 
 ---
 

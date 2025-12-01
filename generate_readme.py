@@ -17,18 +17,11 @@ USER = {
         "I build backend APIs",
         "I love clean code & architecture"
     ],
-    "tech_stack": [
-        "Kotlin — Primary Android language, concise and safe",
-        "Jetpack Compose — Declarative UI for faster delivery",
-        "Spring Boot & Ktor — Backend APIs",
-        "Room & PostgreSQL — Reliable persistence",
-        "Python (Aiogram) — Telegram bots & automation"
-    ],
     "skills_icons": [
         {"category": "Languages", "icons": ["java","kotlin","javascript","python","html","css"]},
         {"category": "Frameworks", "icons": ["spring","springboot","android","compose","aiogram"]},
         {"category": "Tools", "icons": ["git","github","postgresql","ubuntu"]},
-        {"category": "Platforms", "icons": ["linux","androidstudio","intellij","vscode"]}
+        {"category": "Platforms", "icons": ["linux","androidstudio","vscode"]}
     ]
 }
 
@@ -38,10 +31,6 @@ USER = {
 TYPING_BASE = "https://readme-typing-svg.demolab.com"
 
 def make_typing_svg_url(lines, font="Fira+Code", size=18, pause=1000, color="00FF2B", width=500, height=50):
-    """
-    lines: list of strings (each line will appear in typing animation)
-    returns: SVG URL for README
-    """
     lines_joined = "%0A".join([line.strip().replace(" ", "+") for line in lines])
     url = f"{TYPING_BASE}?font={font}&size={size}&pause={pause}&color={color}&width={width}&height={height}&lines={lines_joined}&center=true&multiline=true&repeat=false"
     return url
@@ -52,24 +41,20 @@ def make_typing_svg_url(lines, font="Fira+Code", size=18, pause=1000, color="00F
 def generate_readme(user):
     updated_time = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     
-    # Skills icons table
     skills_table = ""
     for i in range(0, len(user["skills_icons"]), 2):
         row_categories = user["skills_icons"][i:i+2]
-        
-        # Header row
+
         headers = "| " + " | ".join([
             f"<div align='center'><h3>{cat['category']}</h3></div>"
             for cat in row_categories
         ]) + " |\n"
         
-        # Separator row
         separators = "| " + " | ".join(["----"] * len(row_categories)) + " |\n"
         
-        # Icons row
         icons_row = "| " + " | ".join([
             "<div align='center'>" + "".join([
-                f'<img src="https://skillicons.dev/icons?i={icon}" alt="{icon}" title="{icon}" height="40" />' 
+                f'<img src="https://skillicons.dev/icons?i={icon}" alt="{icon}" height="40" />' 
                 for icon in cat["icons"]
             ]) + "</div>"
             for cat in row_categories
@@ -77,30 +62,22 @@ def generate_readme(user):
         
         skills_table += headers + separators + icons_row + "\n"
 
-    # Dynamic typing for about lines
     about_lines_typing = "\n".join([
-        f'<img src="{make_typing_svg_url([line], size=24, width=600, color="00FF2B")}" alt="Typing SVG"/>' 
+        f'<img src="{make_typing_svg_url([line], size=24, width=600, color="00FF2B")}" />' 
         for line in user['about_lines']
     ])
 
-    # -------------------------
-    # README CONTENT
-    # -------------------------
     readme = f"""<div align="center">
 
-<!-- Snake Animation -->
-<img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" width="100%" />
+<img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" width="100%" />
 
-<!-- Typing dynamic "About Me" below snake -->
 {about_lines_typing}
 
-<!-- Subtitle -->
-<img src="{make_typing_svg_url(['Full Stack Android Developer'], size=18, width=700, color='58A6FF')}" alt="Typing SVG"/>
+<img src="{make_typing_svg_url(['Full Stack Android Developer'], size=18, width=700, color='58A6FF')}" />
 
-<!-- Stats -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username={user['github_username']}&color=00FF2B&style=flat-square&label=Profile+Views" alt="Profile Views" />
-  <img src="https://img.shields.io/github/followers/{user['github_username']}?color=58A6FF&label=Followers&style=flat-square" alt="GitHub Followers" />
+  <img src="https://komarev.com/ghpvc/?username={user['github_username']}&color=00FF2B&style=flat-square&label=Profile+Views" />
+  <img src="https://img.shields.io/github/followers/{user['github_username']}?color=58A6FF&label=Followers&style=flat-square" />
 </p>
 
 </div>
@@ -108,8 +85,6 @@ def generate_readme(user):
 ---
 
 ## 🛠️ Tech Stack
-
-<img src="{make_typing_svg_url(['Technologies & Tools:'], size=20, width=400, color='00FF2B')}" alt="Typing SVG" />
 
 {skills_table}
 
@@ -119,59 +94,38 @@ def generate_readme(user):
 
 <div align="center">
 
-<!-- GitHub Stats -->
-<img src="https://github-readme-stats.vercel.app/api?username=Developer-Mustafo&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=00FF2B&icon_color=00FF2B&rank_icon=github" height="160" />
+<!-- Stats -->
+<img src="https://github-readme-stats-git-masterorgs-github-readme-stats-team.vercel.app/api?username=Developer-Mustafo&show_icons=true&theme=dark&hide_border=true" height="165" />
 
-<!-- Top Languages -->
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Developer-Mustafo&layout=compact&theme=dark&hide_border=true&bg_color=0D1117&title_color=00FF2B" height="160" />
+<!-- Top langs -->
+<img src="https://github-readme-stats-git-masterorgs-github-readme-stats-team.vercel.app/api/top-langs/?username=Developer-Mustafo&layout=compact&theme=dark&hide_border=true" height="165" />
 
-<!-- Streak Stats -->
-<img src="https://streak-stats.demolab.com?user=Developer-Mustafo&theme=dark&hide_border=true&background=0D1117&stroke=00FF2B&ring=00FF2B&fire=00FF2B&currStreakLabel=00FF2B" height="160" />
+<!-- Activity Graph -->
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Developer-Mustafo&theme=react-dark&hide_border=true" width="100%" />
 
 </div>
-
 
 ---
 
 ## 📫 Connect With Me
 
-<img src="{make_typing_svg_url(['Get In Touch:'], size=20, width=300, color='00FF2B')}" alt="Typing SVG" />
-
 <div align="center">
-<a href="{user['telegram']}">
-  <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
-</a>
-<a href="mailto:{user['email']}">
-  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
-</a>
-<a href="{user['linkedin']}">
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-</a>
-<a href="https://github.com/{user['github_username']}">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-</a>
-<a href="{user['portfolio']}">
-  <img src="https://img.shields.io/badge/Portfolio-FF7139?style=for-the-badge&logo=firefox&logoColor=white" alt="Portfolio" />
-</a>
+<a href="{user['telegram']}"><img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram" /></a>
+<a href="mailto:{user['email']}"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail" /></a>
+<a href="{user['linkedin']}"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin" /></a>
+<a href="{user['portfolio']}"><img src="https://img.shields.io/badge/Portfolio-FF7139?style=for-the-badge&logo=firefox" /></a>
 </div>
 
 ---
 
 <div align="center">
-
-### 🎯 "Code is like humor. When you have to explain it, it's bad." - Cory House
-
-**Last Updated:** {updated_time}
-
+<b>Last Updated:</b> {updated_time}
 </div>
 """
     return readme
 
-# -------------------------
-# MAIN
-# -------------------------
+
 if __name__ == "__main__":
-    readme_content = generate_readme(USER)
     with open("README.md", "w", encoding="utf-8") as f:
-        f.write(readme_content)
-    print("✅ README.md generated successfully!")
+        f.write(generate_readme(USER))
+    print("✅ README.md generated Successfully!")

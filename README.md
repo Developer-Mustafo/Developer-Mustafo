@@ -9,8 +9,8 @@
 
 ![Profile Views](https://komarev.com/ghpvc/?username=Developer-Mustafo&color=blue&style=flat-square)
 ![GitHub Followers](https://img.shields.io/github/followers/Developer-Mustafo?style=social)
-![Android Developer](https://img.shields.io/badge/Android%20Developer-Expert-green)
-![Backend Developer](https://img.shields.io/badge/Backend%20Developer-Spring%20Boot-orange)
+![Android Developer](https://img.shields.io/badge/Android%20Developer-Kotlin%20%2F%20Java-green)
+![Spring Boot](https://img.shields.io/badge/Backend-Spring%20Boot-orange)
 
 </div>
 
@@ -73,14 +73,6 @@
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" width="50" height="50" />
     <br/>
     <strong>Spring Boot</strong>
-    <br/>
-    <small>Intermediate</small>
-</div>
-
-<div align="center" style="margin: 10px;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="50" height="50" />
-    <br/>
-    <strong>Node.js</strong>
     <br/>
     <small>Intermediate</small>
 </div>
@@ -152,19 +144,27 @@
 </div>
 
 <div align="center" style="margin: 10px;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="50" height="50" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="50" height="50" />
     <br/>
-    <strong>Git</strong>
+    <strong>HTML5</strong>
     <br/>
     <small>Intermediate</small>
 </div>
 
 <div align="center" style="margin: 10px;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" width="50" height="50" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="50" height="50" />
     <br/>
-    <strong>Docker</strong>
+    <strong>CSS3</strong>
     <br/>
-    <small>Beginner</small>
+    <small>Intermediate</small>
+</div>
+
+<div align="center" style="margin: 10px;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="50" height="50" />
+    <br/>
+    <strong>Git</strong>
+    <br/>
+    <small>Intermediate</small>
 </div>
 
 <div align="center" style="margin: 10px;">
@@ -208,7 +208,7 @@
     </div>
     
     <div style="margin: 20px 0;">
-        ![Aiogram](https://img.shields.io/badge/-Aiogram-gray?style=flat) ![Python](https://img.shields.io/badge/-Python-gray?style=flat) ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-gray?style=flat) ![Redis](https://img.shields.io/badge/-Redis-gray?style=flat)
+        ![Aiogram](https://img.shields.io/badge/-Aiogram-gray?style=flat) ![Python](https://img.shields.io/badge/-Python-gray?style=flat) ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-gray?style=flat)
     </div>
 </div>
 </div>
@@ -239,8 +239,8 @@
 <li>MVVM/MVI architecture</li>
 <li>Coroutines & Flow</li>
 <li>Room database with DAOs</li>
-<li>Dependency Injection (Hilt/Dagger)</li>
 <li>Retrofit for networking</li>
+<li>Dependency Injection (Hilt)</li>
 </ul>
 </td>
 </tr>
@@ -274,36 +274,50 @@
 
 <table>
 <tr>
-<td align="center" width="140">
+<td align="center" width="120">
 <a href="mailto:mustaforahimov30@gmail.com">
-<img src="https://img.icons8.com/color/96/000000/gmail.png" width="48" />
+<img src="https://img.icons8.com/color/96/000000/gmail.png" width="40" />
 <br/>
 Email
 </a>
 </td>
-<td align="center" width="140">
+<td align="center" width="120">
 <a href="https://t.me/rahim_mustafo_x">
-<img src="https://img.icons8.com/color/96/000000/telegram-app.png" width="48" />
+<img src="https://img.icons8.com/color/96/000000/telegram-app.png" width="40" />
 <br/>
 Telegram
 </a>
 </td>
-<td align="center" width="140">
-<a href="https://linkedin.com/in/mustafo-rahim">
-<img src="https://img.icons8.com/color/96/000000/linkedin.png" width="48" />
+<td align="center" width="120">
+<a href="https://www.linkedin.com/in/mustafo-rahim-4a0384324" target="_blank">
+<img src="https://img.icons8.com/color/96/000000/linkedin.png" width="40" />
 <br/>
 LinkedIn
 </a>
 </td>
-<td align="center" width="140">
-<a href="https://github.com/Developer-Mustafo">
-<img src="https://img.icons8.com/color/96/000000/github.png" width="48" />
+<td align="center" width="120">
+<a href="https://github.com/Developer-Mustafo" target="_blank">
+<img src="https://img.icons8.com/color/96/000000/github.png" width="40" />
 <br/>
 GitHub
 </a>
 </td>
+<td align="center" width="120">
+<a href="http://davomat-app.uz" target="_blank">
+<img src="https://img.icons8.com/color/96/000000/domain.png" width="40" />
+<br/>
+Portfolio
+</a>
+</td>
 </tr>
 </table>
+
+<p>
+<strong>Professional Links:</strong><br/>
+<a href="https://www.linkedin.com/in/mustafo-rahim-4a0384324" target="_blank">LinkedIn Profile</a> • 
+<a href="https://github.com/Developer-Mustafo" target="_blank">GitHub Profile</a> • 
+<a href="http://davomat-app.uz" target="_blank">Portfolio Website</a>
+</p>
 
 <p>
 <em>Feel free to reach out for collaboration, project discussions, or technical questions!</em>
@@ -315,17 +329,23 @@ GitHub
 
 <div align="center">
 
-### 🎯 Current Learning Goals
-- Mastering Modern Android Architecture (Clean Architecture, MVI)
-- Deepening Spring Boot expertise
-- Building scalable Telegram bots with Aiogram
-- Exploring Jetpack Compose advanced features
+### 🎯 Current Focus Areas
+- **Android Development:** Modern architectures with Kotlin & Jetpack Compose
+- **Backend:** Spring Boot applications with PostgreSQL
+- **Telegram Bots:** Building scalable bots with Aiogram
+- **API Design:** RESTful API development and documentation
+
+### 📚 Learning Goals 2024
+1. Master Clean Architecture in Android
+2. Deepen Spring Boot expertise
+3. Build complex Telegram bot ecosystems
+4. Contribute to open-source projects
 
 <br/>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%" />
 
-<small>**Last Updated:** 2025-12-28 19:12 UTC</small><br/>
+<small>**Last Updated:** 2025-12-28 19:21 UTC</small><br/>
 <small>© 2025 • Built with passion from Urgench, Khorezm, Uzbekistan</small>
 
 </div>

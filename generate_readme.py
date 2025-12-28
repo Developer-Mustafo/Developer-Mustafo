@@ -11,7 +11,14 @@ DEVELOPER = {
     "bio": "Passionate about Android and backend programming, working with Kotlin and Java. Goal-oriented, curious, and strives to create projects with real value. Aims to become a strong developer in the future.",
     "focus": "Building practical Android apps with modern architectures and scalable backend systems",
     "experience": "3+ years",
-    "status": "Open to challenging projects and collaborations"
+    "status": "Open to challenging projects and collaborations",
+    "contact": {
+        "email": "mustaforahimov30@gmail.com",
+        "telegram": "https://t.me/rahim_mustafo_x",
+        "linkedin": "https://www.linkedin.com/in/mustafo-rahim-4a0384324",
+        "github": "https://github.com/Developer-Mustafo",
+        "portfolio": "http://davomat-app.uz"
+    }
 }
 
 # -------------------------
@@ -27,7 +34,6 @@ TECH_SKILLS = {
     ],
     "⚡ Backend Development": [
         {"name": "Spring Boot", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg", "level": "Intermediate"},
-        {"name": "Node.js", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", "level": "Intermediate"},
         {"name": "PostgreSQL", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg", "level": "Intermediate"},
         {"name": "REST API", "icon": "https://img.icons8.com/color/48/000000/api.png", "level": "Intermediate"}
     ],
@@ -39,8 +45,9 @@ TECH_SKILLS = {
     "🔧 Languages & Tools": [
         {"name": "Python", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", "level": "Intermediate"},
         {"name": "JavaScript", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", "level": "Intermediate"},
+        {"name": "HTML5", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", "level": "Intermediate"},
+        {"name": "CSS3", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", "level": "Intermediate"},
         {"name": "Git", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", "level": "Intermediate"},
-        {"name": "Docker", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg", "level": "Beginner"},
         {"name": "Linux", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg", "level": "Intermediate"}
     ]
 }
@@ -61,17 +68,17 @@ PROJECTS = [
     {
         "name": "Telegram Bots Suite",
         "description": "Various Telegram bots for automation, notifications, and business processes",
-        "technologies": ["Aiogram", "Python", "PostgreSQL", "Redis"],
+        "technologies": ["Aiogram", "Python", "PostgreSQL"],
         "features": ["Automated responses", "User management", "Database integration", "Admin controls", "Scheduling"],
         "status": "Ongoing",
         "year": "2022-Present",
         "highlight": True
     },
     {
-        "name": "Android Apps",
-        "description": "Multiple Android applications using both traditional and modern approaches",
-        "technologies": ["Kotlin", "Java", "MVVM", "Room", "Retrofit"],
-        "features": ["Clean Architecture", "Local database", "API integration", "Material Design", "Testing"],
+        "name": "Android Applications",
+        "description": "Multiple Android apps using both traditional and modern approaches",
+        "technologies": ["Kotlin", "Java", "MVVM", "Room", "Material Design"],
+        "features": ["Clean Architecture", "Local database", "Material Design UI", "Testing", "API integration"],
         "status": "Ongoing",
         "year": "2021-Present",
         "highlight": False
@@ -95,8 +102,8 @@ ANDROID_APPROACHES = {
         "MVVM/MVI architecture",
         "Coroutines & Flow",
         "Room database with DAOs",
-        "Dependency Injection (Hilt/Dagger)",
-        "Retrofit for networking"
+        "Retrofit for networking",
+        "Dependency Injection (Hilt)"
     ]
 }
 
@@ -119,8 +126,8 @@ def generate_readme():
 
 ![Profile Views](https://komarev.com/ghpvc/?username=Developer-Mustafo&color=blue&style=flat-square)
 ![GitHub Followers](https://img.shields.io/github/followers/Developer-Mustafo?style=social)
-![Android Developer](https://img.shields.io/badge/Android%20Developer-Expert-green)
-![Backend Developer](https://img.shields.io/badge/Backend%20Developer-Spring%20Boot-orange)
+![Android Developer](https://img.shields.io/badge/Android%20Developer-Kotlin%20%2F%20Java-green)
+![Spring Boot](https://img.shields.io/badge/Backend-Spring%20Boot-orange)
 
 </div>
 
@@ -238,7 +245,7 @@ def generate_readme():
 """
     
     # Contact Section
-    contact_section = """
+    contact_section = f"""
 ---
 
 ## 📫 Connect With Me
@@ -247,36 +254,50 @@ def generate_readme():
 
 <table>
 <tr>
-<td align="center" width="140">
-<a href="mailto:mustaforahimov30@gmail.com">
-<img src="https://img.icons8.com/color/96/000000/gmail.png" width="48" />
+<td align="center" width="120">
+<a href="mailto:{DEVELOPER['contact']['email']}">
+<img src="https://img.icons8.com/color/96/000000/gmail.png" width="40" />
 <br/>
 Email
 </a>
 </td>
-<td align="center" width="140">
-<a href="https://t.me/rahim_mustafo_x">
-<img src="https://img.icons8.com/color/96/000000/telegram-app.png" width="48" />
+<td align="center" width="120">
+<a href="{DEVELOPER['contact']['telegram']}">
+<img src="https://img.icons8.com/color/96/000000/telegram-app.png" width="40" />
 <br/>
 Telegram
 </a>
 </td>
-<td align="center" width="140">
-<a href="https://linkedin.com/in/mustafo-rahim">
-<img src="https://img.icons8.com/color/96/000000/linkedin.png" width="48" />
+<td align="center" width="120">
+<a href="{DEVELOPER['contact']['linkedin']}" target="_blank">
+<img src="https://img.icons8.com/color/96/000000/linkedin.png" width="40" />
 <br/>
 LinkedIn
 </a>
 </td>
-<td align="center" width="140">
-<a href="https://github.com/Developer-Mustafo">
-<img src="https://img.icons8.com/color/96/000000/github.png" width="48" />
+<td align="center" width="120">
+<a href="{DEVELOPER['contact']['github']}" target="_blank">
+<img src="https://img.icons8.com/color/96/000000/github.png" width="40" />
 <br/>
 GitHub
 </a>
 </td>
+<td align="center" width="120">
+<a href="{DEVELOPER['contact']['portfolio']}" target="_blank">
+<img src="https://img.icons8.com/color/96/000000/domain.png" width="40" />
+<br/>
+Portfolio
+</a>
+</td>
 </tr>
 </table>
+
+<p>
+<strong>Professional Links:</strong><br/>
+<a href="{DEVELOPER['contact']['linkedin']}" target="_blank">LinkedIn Profile</a> • 
+<a href="{DEVELOPER['contact']['github']}" target="_blank">GitHub Profile</a> • 
+<a href="{DEVELOPER['contact']['portfolio']}" target="_blank">Portfolio Website</a>
+</p>
 
 <p>
 <em>Feel free to reach out for collaboration, project discussions, or technical questions!</em>
@@ -291,11 +312,17 @@ GitHub
 
 <div align="center">
 
-### 🎯 Current Learning Goals
-- Mastering Modern Android Architecture (Clean Architecture, MVI)
-- Deepening Spring Boot expertise
-- Building scalable Telegram bots with Aiogram
-- Exploring Jetpack Compose advanced features
+### 🎯 Current Focus Areas
+- **Android Development:** Modern architectures with Kotlin & Jetpack Compose
+- **Backend:** Spring Boot applications with PostgreSQL
+- **Telegram Bots:** Building scalable bots with Aiogram
+- **API Design:** RESTful API development and documentation
+
+### 📚 Learning Goals 2024
+1. Master Clean Architecture in Android
+2. Deepen Spring Boot expertise
+3. Build complex Telegram bot ecosystems
+4. Contribute to open-source projects
 
 <br/>
 
@@ -325,19 +352,24 @@ if __name__ == "__main__":
     
     print("✅ README.md generated successfully!")
     print("📁 File saved to: README.md")
-    print("\n📋 Summary:")
+    print("\n📋 Profile Summary:")
     print(f"   Name: {DEVELOPER['name']}")
     print(f"   Location: {DEVELOPER['location']}")
     print(f"   Experience: {DEVELOPER['experience']}")
-    print(f"   Skills Categories: {len(TECH_SKILLS)}")
-    print(f"   Total Skills: {sum(len(skills) for skills in TECH_SKILLS.values())}")
-    print(f"   Featured Projects: {len([p for p in PROJECTS if p.get('highlight')])}")
+    print(f"   Email: {DEVELOPER['contact']['email']}")
+    print(f"   LinkedIn: {DEVELOPER['contact']['linkedin']}")
+    print(f"   Portfolio: {DEVELOPER['contact']['portfolio']}")
     
-    print("\n🚀 Features Included:")
-    print("   • Programming language icons with skill levels")
-    print("   • Davomat App with correct technologies (Spring Boot + Aiogram)")
-    print("   • Traditional vs Modern Android development comparison")
-    print("   • GitHub statistics and activity graphs")
-    print("   • Contact section with social media links")
+    print("\n🛠️ Updated Technical Stack:")
+    print("   • Mobile: Kotlin, Java, Android Studio, Jetpack Compose")
+    print("   • Backend: Spring Boot, PostgreSQL, REST API")
+    print("   • Telegram Bots: Aiogram, Telegram Bot API")
+    print("   • Languages: Python, JavaScript, HTML5, CSS3")
+    print("   • Tools: Git, Linux")
     
-    print("\n🎯 Ready to showcase your Android and backend development skills!")
+    print("\n🚀 Removed from skills:")
+    print("   • Node.js")
+    print("   • Docker")
+    
+    print("\n✅ LinkedIn link added successfully!")
+    print("🎯 README is now ready to showcase your Android & Backend expertise!")

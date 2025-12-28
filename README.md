@@ -1,17 +1,22 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" width="100%" />
+<h1>👋 Hi, I'm Mustafo Rahim</h1>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00FF2B&width=600&height=50&lines=I+am+an+Android+Developer&center=true&multiline=true&repeat=false" />
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00FF2B&width=600&height=50&lines=I+write+Telegram+bots&center=true&multiline=true&repeat=false" />
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00FF2B&width=600&height=50&lines=I+build+backend+APIs&center=true&multiline=true&repeat=false" />
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00FF2B&width=600&height=50&lines=I+love+clean+code+&+architecture&center=true&multiline=true&repeat=false" />
+<p align="center"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=00FF2B&center=true&vCenter=true&width=600&lines=🚀+I+am+an+Android+Developer" /></p>
+<p align="center"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=00FF2B&center=true&vCenter=true&width=600&lines=🤖+I+write+Telegram+bots" /></p>
+<p align="center"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=00FF2B&center=true&vCenter=true&width=600&lines=⚡+I+build+backend+APIs" /></p>
+<p align="center"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=00FF2B&center=true&vCenter=true&width=600&lines=💡+I+love+clean+code+&+architecture" /></p>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=58A6FF&width=700&height=50&lines=Full+Stack+Android+Developer&center=true&multiline=true&repeat=false" />
+<br/>
 
-<p align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=58A6FF&center=true&vCenter=true&width=700&lines=Full+Stack+Android+Developer" />
+
+<br/><br/>
+
+<p>
   <img src="https://komarev.com/ghpvc/?username=Developer-Mustafo&color=00FF2B&style=flat-square&label=Profile+Views" />
   <img src="https://img.shields.io/github/followers/Developer-Mustafo?color=58A6FF&label=Followers&style=flat-square" />
+  <img src="https://img.shields.io/github/stars/Developer-Mustafo?color=00FF2B&style=flat-square&label=Stars" />
 </p>
 
 </div>
@@ -20,15 +25,14 @@
 
 ## 🛠️ Tech Stack
 
-| <div align='center'><h3>Languages</h3></div> | <div align='center'><h3>Frameworks</h3></div> |
-| ---- | ---- |
-| <div align='center'><img src="https://skillicons.dev/icons?i=java" alt="java" height="40" /><img src="https://skillicons.dev/icons?i=kotlin" alt="kotlin" height="40" /><img src="https://skillicons.dev/icons?i=javascript" alt="javascript" height="40" /><img src="https://skillicons.dev/icons?i=python" alt="python" height="40" /><img src="https://skillicons.dev/icons?i=html" alt="html" height="40" /><img src="https://skillicons.dev/icons?i=css" alt="css" height="40" /></div> | <div align='center'><img src="https://skillicons.dev/icons?i=spring" alt="spring" height="40" /><img src="https://skillicons.dev/icons?i=springboot" alt="springboot" height="40" /><img src="https://skillicons.dev/icons?i=android" alt="android" height="40" /><img src="https://skillicons.dev/icons?i=compose" alt="compose" height="40" /><img src="https://skillicons.dev/icons?i=aiogram" alt="aiogram" height="40" /></div> |
+<div align="center">
 
-| <div align='center'><h3>Tools</h3></div> | <div align='center'><h3>Platforms</h3></div> |
-| ---- | ---- |
-| <div align='center'><img src="https://skillicons.dev/icons?i=git" alt="git" height="40" /><img src="https://skillicons.dev/icons?i=github" alt="github" height="40" /><img src="https://skillicons.dev/icons?i=postgresql" alt="postgresql" height="40" /><img src="https://skillicons.dev/icons?i=ubuntu" alt="ubuntu" height="40" /></div> | <div align='center'><img src="https://skillicons.dev/icons?i=linux" alt="linux" height="40" /><img src="https://skillicons.dev/icons?i=androidstudio" alt="androidstudio" height="40" /><img src="https://skillicons.dev/icons?i=vscode" alt="vscode" height="40" /></div> |
+| Languages & Frameworks | Tools & Platforms |
+|:----------------------:|:-----------------:|
+| <img src="https://skillicons.dev/icons?i=java" alt="java" width="40" height="40" /> <img src="https://skillicons.dev/icons?i=kotlin" alt="kotlin" width="40" height="40" /> <img src="https://skillicons.dev/icons?i=javascript" alt="javascript" width="40" height="40" /> <img src="https://skillicons.dev/icons?i=python" alt="python" width="40" height="40" /> <img src="https://skillicons.dev/icons?i=html" alt="html" width="40" height="40" /> <img src="https://skillicons.dev/icons?i=css" alt="css" width="40" height="40" /> <img src="https://skillicons.dev/icons?i=spring" alt="spring" width="40" height="40" /> <img src="https://skillicons.dev/icons?i=androidstudio" alt="androidstudio" width="40" height="40" /> <img src="https://skillicons.dev/icons?i=nodejs" alt="nodejs" width="40" height="40" /> | <img src="https://skillicons.dev/icons?i=git" alt="git" width="40" height="40" /> <img src="https://skillicons.dev/icons?i=github" alt="github" width="40" height="40" /> <img src="https://skillicons.dev/icons?i=postgresql" alt="postgresql" width="40" height="40" /> <img src="https://skillicons.dev/icons?i=ubuntu" alt="ubuntu" width="40" height="40" /> <img src="https://skillicons.dev/icons?i=linux" alt="linux" width="40" height="40" /> <img src="https://skillicons.dev/icons?i=android" alt="android" width="40" height="40" /> <img src="https://skillicons.dev/icons?i=vscode" alt="vscode" width="40" height="40" /> |
 
 
+</div>
 
 ---
 
@@ -36,14 +40,21 @@
 
 <div align="center">
 
-<!-- Stats -->
-<img src="https://github-readme-stats-git-masterorgs-github-readme-stats-team.vercel.app/api?username=Developer-Mustafo&show_icons=true&theme=dark&hide_border=true" height="165" />
+<img src="https://github-readme-stats.vercel.app/api?username=Developer-Mustafo&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=00FF2B&icon_color=58A6FF&text_color=FFFFFF" width="49%" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Developer-Mustafo&theme=radical&hide_border=true&background=0D1117&ring=00FF2B&fire=58A6FF&currStreakLabel=00FF2B" width="49%" />
 
-<!-- Top langs -->
-<img src="https://github-readme-stats-git-masterorgs-github-readme-stats-team.vercel.app/api/top-langs/?username=Developer-Mustafo&layout=compact&theme=dark&hide_border=true" height="165" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Developer-Mustafo&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=00FF2B&text_color=FFFFFF" width="49%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Developer-Mustafo&theme=react-dark&hide_border=true&bg_color=0D1117&color=00FF2B&line=58A6FF&point=FFFFFF" width="49%" />
 
-<!-- Activity Graph -->
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Developer-Mustafo&theme=react-dark&hide_border=true" width="100%" />
+</div>
+
+---
+
+## 🏆 GitHub Trophies
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=Developer-Mustafo&theme=radical&no-frame=true&row=1&column=7&margin-w=15&margin-h=15" width="100%" />
 
 </div>
 
@@ -52,14 +63,30 @@
 ## 📫 Connect With Me
 
 <div align="center">
-<a href="t.me/rahim_mustafo_x"><img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram" /></a>
-<a href="mailto:mustaforahimov30@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail" /></a>
-<a href="https://www.linkedin.com/in/mustafo-rahim-4a0384324"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin" /></a>
-<a href="http://davomat-app.uz"><img src="https://img.shields.io/badge/Portfolio-FF7139?style=for-the-badge&logo=firefox" /></a>
+
+<a href="https://t.me/rahim_mustafo_x">
+  <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" />
+</a>
+<a href="mailto:mustaforahimov30@gmail.com">
+  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
+<a href="https://www.linkedin.com/in/mustafo-rahim-4a0384324">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+<a href="http://davomat-app.uz">
+  <img src="https://img.shields.io/badge/Portfolio-FF7139?style=for-the-badge&logo=google-chrome&logoColor=white" />
+</a>
+
 </div>
 
 ---
 
 <div align="center">
-<b>Last Updated:</b> 2025-12-28 12:40 UTC
+
+### 💻 "Code is like humor. When you have to explain it, it's bad." – Cory House
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%" />
+
+**Last Updated:** 2025-12-28 18:46 UTC
+
 </div>
